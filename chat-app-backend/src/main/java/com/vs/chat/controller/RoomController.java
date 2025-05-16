@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/rooms")
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin("http://localhost:5173")
 public class RoomController {
     @Autowired
     private RoomRepository roomRepository;
@@ -61,9 +61,10 @@ public class RoomController {
 
         int start = Math.max(0, messages.size() - (page + 1) * size);
         int end = Math.min(messages.size(), start + size);
-        List<Message> paginatedMessages = messages.subList(start, end);
+        // Agar start > end ho gaya toh empty list bhej do
+        List<Message> paginatedMessages = (start < end) ? messages.subList(start, end) : List.of();
 
-        return ResponseEntity.ok(messages);
+        return ResponseEntity.ok(paginatedMessages);
 
     }
 }

@@ -15,7 +15,7 @@ import com.vs.chat.model.Room;
 import com.vs.chat.repository.RoomRepository;
 
 @Controller
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin("http://localhost:5173")
 public class ChatController {
     @Autowired
     RoomRepository roomRepository;
