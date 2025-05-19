@@ -1,15 +1,15 @@
-# 📡 Real-Time Chat Application
+# 💬 Real-Time Chat Application
 
 A real-time chat web application built using **Spring Boot**, **React**, and **WebSocket**. This application allows multiple users to communicate instantly through a simple, elegant interface. It demonstrates seamless two-way communication between server and client in real time.
 
 
 ## 📌 Features  
 
-- 🔒 User-friendly real-time messaging interface  
-- 🚀 Real-time bi-directional communication with **WebSocket**  
-- 🎨 Modern, responsive **React** frontend  
-- ☕ Backend API powered by **Spring Boot**  
-- 🧭 Clean architecture and well-structured codebase  
+-  User-friendly real-time messaging interface  
+-  Real-time bi-directional communication with **WebSocket**  
+-  Modern, responsive **React** frontend  
+-  Backend API powered by **Spring Boot**  
+-  Clean architecture and well-structured codebase  
 
 
 ## 🛠️ Tech Stack  
